@@ -30,4 +30,4 @@
    node src/index.js
 
 ### Deployment
-Deployed using Vercel
+Deployed using Vercel  https://ethic-watchdog.vercel.app/ 
