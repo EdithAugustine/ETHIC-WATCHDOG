@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETHIC WATCHDOG - Whistleblower Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #04300e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="ETHIC WATCHDOG.png" alt="ETHIC WATCHDOG Logo">
+    <h1>ETHIC WATCHDOG</h1>
+    <p>A Whistleblower Platform</p>
+    <form action="/submit-case" method="POST" enctype="multipart/form-data">
+      <label for="email">Email (Optional):</label>
+      <input type="email" id="email" name="email" placeholder="Your email (optional)">
+
+      <label for="caseType">Case Type:</label>
+      <select id="caseType" name="caseType" required>
+        <option value="">Select a case type...</option>
+        <option value="fraud">Fraud</option>
+        <option value="corruption">Corruption</option>
+        <option value="abuse">Abuse</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="caseDescription">Case Description:</label>
+      <textarea id="caseDescription" name="caseDescription" rows="5" placeholder="Describe your case here..." required></textarea>
+
+      <label for="fileUpload">Upload Supporting Documents (Optional):</label>
+      <input type="file" id="fileUpload" name="fileUpload">
+
+      <button type="submit">Submit Case</button>
+    </form>
+  </div>
+</body>
+</html>
